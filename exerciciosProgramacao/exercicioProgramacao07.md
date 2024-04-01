@@ -230,24 +230,26 @@ classe Circulo extends FormaGeometrica:
   Atributos:
     raio
 
-  Método CalcularArea():
-    Retorna π * raio^2.
-
   Método Construtor(cor, raio):
     ClasseSuperior(cor)
     raio recebe raio
+
+  Método CalcularArea():
+    Retorna π * raio^2.
+
+
 classe Retangulo extends FormaGeometrica:
   Atributos:
     -base
     -altura
-
-  Método CalcularArea():
-    Retorna altura * base.
-
   Método Construtor(cor, base, altura):
     ClasseSuperior(cor)
     base recebe base
     altura recebe altura
+  Método CalcularArea():
+    Retorna altura * base.
+
+  
 ```
 
 
@@ -268,8 +270,6 @@ função corrida(aceleracao, distancia, velocidade, max, maximoDeTempo):
   velocidade = velocidade
 
   enquanto verdadeiro:
-    velocidade = d + aceleracao * tempo
-
     se d > max então
       velocidade = max
 
@@ -285,7 +285,7 @@ função corrida(aceleracao, distancia, velocidade, max, maximoDeTempo):
 
     tempo = tempo + 1
 
-simularCorrida(10, 1000, 0, 200, 120)
+Corrida(10, 1000, 0, 200, 120)
 ```
 ______
 
